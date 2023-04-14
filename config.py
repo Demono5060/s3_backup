@@ -9,7 +9,7 @@ LOG_FILE = open(BUFFER_PATH+'log.txt', 'a')
 SERVICES = [
     {
         'name': f'mysql_{DATETIME}.sql',
-        'command': 'mysqldump -uroot -ppassword --all-databases>{BUFFER_PATH}{NAME}',
+        'command': 'mysqldump -uuser -psecret --all-databases>{BUFFER_PATH}{NAME}',
         'bucket': '8z41b7woknwpd02pmvgjjp5muva714',
         'bucket_path': 'mysql/'
     },
