@@ -16,7 +16,7 @@
 ``SERVICES`` - список словарей, в которых кратко описаны сервисы, дампы которых нужно снять, имеет следующие параметры:
 ```python
         'name': f'mysql_{DATETIME}.sql',
-        'command': 'mysqldump -uroot -ppassword --all-databases>{BUFFER_PATH}{NAME}',
+        'command': 'mysqldump -uuser -psecret --all-databases>{BUFFER_PATH}{NAME}',
         'bucket': '8z41b7woknwpd02pmvgjjp5muva714',
         'bucket_path': 'mysql/'
 ```
